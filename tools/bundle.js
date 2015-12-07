@@ -9,10 +9,10 @@ var webpackConfig = require('./webpack.config');
     var compiler = webpack(webpackConfig);
     var callback = function(err, stats){
       if (err){
-        reject(err);
+        return reject(err);
       } else {
         console.log(stats.toString(webpackConfig.stats));
-        resolve();
+        return resolve();
       }
     };
 
