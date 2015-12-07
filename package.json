@@ -1,0 +1,29 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "A React Starter Kit to use as a starting point for working on simple ReactJS app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdangelo/react-starter.git"
+  },
+  "keywords": [
+    "ReactJS"
+  ],
+  "author": "Grégory D'Angelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdangelo/react-starter/issues"
+  },
+  "homepage": "https://github.com/gdangelo/react-starter#readme",
+  "devDependencies": {
+    "webpack": "^1.12.9"
+  },
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  }
+}
