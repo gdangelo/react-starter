@@ -4,7 +4,7 @@ var webpackConfig = require('./webpack.config');
 /**
  * Bundles JavaScript.
  */
-(function bundle() {
+module.exports = function bundle() {
   return new Promise(function(resolve, reject){
     var compiler = webpack(webpackConfig);
     var callback = function(err, stats){
@@ -18,4 +18,4 @@ var webpackConfig = require('./webpack.config');
 
     compiler.run(callback);
   });
-})();
+};
