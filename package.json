@@ -4,7 +4,8 @@
   "description": "A React Starter Kit to use as a starting point for working on simple ReactJS app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "babel-node tools/clean.js",
+    "bundle": "babel-node tools/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/gdangelo/react-starter#readme",
   "devDependencies": {
+    "del": "^2.2.0",
     "webpack": "^1.12.9"
   },
   "dependencies": {
