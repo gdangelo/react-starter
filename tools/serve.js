@@ -8,7 +8,8 @@ var webpackConfig = require('./webpack.config');
 module.exports = function server(){
   return new Promise(function(resolve, reject){
     new WebpackDevServer(webpack(webpackConfig), {
-      publicPath: webpackConfig.output.publicPath
+      publicPath: webpackConfig.output.publicPath,
+      hot: true
     }).listen(3000, 'localhost', function(err, result){
       if (err){
         console.log(err);
