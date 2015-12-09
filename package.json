@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "babel-node tools/run clean",
     "bundle": "babel-node tools/run bundle",
-    "serve": "babel-node tools/run serve"
+    "start": "babel-node tools/run start"
   },
   "repository": {
     "type": "git",

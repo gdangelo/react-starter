@@ -9,10 +9,10 @@ module.exports = function bundle() {
     var compiler = webpack(webpackConfig);
     var callback = function(err, stats){
       if (err){
-        return reject(err);
+        reject(err);
       } else {
         console.log(stats.toString(webpackConfig.stats));
-        return resolve();
+        resolve();
       }
     };
 
