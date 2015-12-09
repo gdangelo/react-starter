@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "clean": "babel-node tools/run clean",
-    "bundle": "babel-node tools/run bundle"
+    "bundle": "babel-node tools/run bundle",
+    "serve": "babel-node tools/run serve"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,8 @@
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.2.0",
-    "webpack": "^1.12.9"
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
     "react": "^0.14.3",
