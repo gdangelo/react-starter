@@ -6,13 +6,16 @@ function format(time) {
   return time.toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, '$1');
 }
 
-function run(fn, options) {
-  var start = new Date();
-  console.log("[" + format(start) + "] Starting '" + fn.name + "'...");
-  fn(options).then(function(){
-    var end = new Date();
-    var time = end.getTime() - start.getTime();
-    console.log("[" + format(end) + "] Finished '" + fn.name + "' after " + time + " ms");
+module.exports = run = function (fn, options) {
+  return new Promise(function(resolve, reject){
+    var start = new Date();
+    console.log("[" + format(start) + "] Starting '" + fn.name + "'...");
+    fn(options).then(function(){
+      var end = new Date();
+      var time = end.getTime() - start.getTime();
+      console.log("[" + format(end) + "] Finished '" + fn.name + "' after " + time + " ms");
+      resolve();
+    });
   });
 }
 
