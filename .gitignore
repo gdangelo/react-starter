@@ -3,4 +3,5 @@
 
 build
 node_modules
+bower_modules
 npm-debug.log

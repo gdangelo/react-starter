@@ -1,0 +1,25 @@
+{
+  "name": "react-starter",
+  "description": "A React Starter Kit to use as a starting point for working on simple ReactJS app",
+  "main": "index.js",
+  "authors": [
+    "Grégory D'Angelo"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "ReactJS"
+  ],
+  "homepage": "https://github.com/gdangelo/react-starter",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

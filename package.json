@@ -2,7 +2,7 @@
   "name": "react-starter",
   "version": "1.0.0",
   "description": "A React Starter Kit to use as a starting point for working on simple ReactJS app",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "clean": "babel-node tools/run clean",
     "bundle": "babel-node tools/run bundle",
