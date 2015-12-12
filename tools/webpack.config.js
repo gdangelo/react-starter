@@ -1,5 +1,7 @@
 var path = require("path");
 var webpack = require("webpack");
+var autoprefixer = require('autoprefixer');
+var precss = require('precss');
 
 module.exports = {
   entry: [
@@ -24,8 +26,14 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loaders: ['react-hot', 'babel']
+      }, {
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'postcss-loader']
       }
     ]
+  },
+  postcss: function () {
+    return [autoprefixer, precss];
   },
   stats: {
     colors: true

@@ -33,10 +33,17 @@
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.2.0",
     "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+    "webpack-dev-server": "^1.14.0",
+    "postcss-loader": "~0.8.0",
+    "postcss": "~5.0.12",
+    "precss": "~1.3.0",
+    "css-loader": "~0.23.0",
+    "autoprefixer": "~6.1.2",
+    "style-loader": "~0.13.0"
   },
   "dependencies": {
     "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "normalize.css": "~3.0.3"
   }
 }

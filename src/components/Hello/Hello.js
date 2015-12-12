@@ -1,7 +1,9 @@
 var React = require('react');
 
+var s = require('./Hello.scss');
+
 module.exports = React.createClass({
   render: function () {
-    return <h1>Hello, World!</h1>;
+    return <h1>Hello, {this.props.name}!</h1>;
   }
 });
