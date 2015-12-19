@@ -1,6 +1,6 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var App = require('./components/App/App');
+import React from 'react';
+import { render } from 'react-dom';
+import App from './components/App/App';
 
 var element = React.createElement(App, {});
-ReactDOM.render(element, document.querySelector('.container'));
+render(element, document.querySelector('.container'));

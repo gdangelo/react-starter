@@ -1,12 +1,10 @@
-var run = require('./run');
+import run from './run';
+import clean from './clean';
+import bundle from './bundle';
 
-module.exports = function build(){
-  return new Promise(function(resolve, reject){
-    var clean = run(require('./clean'));
-    return clean.then(function(){
-      run(require('./bundle')).then(function(){
-        resolve();
-      });
-    });
-  });
+async function build() {
+  await run(clean);
+  await run(bundle);
 };
+
+export default build;

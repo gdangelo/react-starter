@@ -1,10 +1,13 @@
-var React = require('react');
-var Hello = require('../Hello/Hello');
+import React, { Component } from 'react';
+import Hello from '../Hello/Hello';
+import s from './App.scss';
 
-var s = require('./App.scss');
+class App extends Component {
 
-module.exports = React.createClass({
-  render: function () {
-    return <Hello name="Greg" />;
+  render() {
+    return <Hello name="React" />;
   }
-});
+
+}
+
+export default App;
