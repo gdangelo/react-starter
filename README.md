@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="http://eloquentwebapp.com" target="_blank">
+    <img src="https://cloud.githubusercontent.com/assets/4352286/13185096/a7cfc380-d73f-11e5-8b40-bac8bf426e52.png" alt="Webpack and React" width="500" height="320"/>
+  </a>
+</p>
+
 # React.js Webpack Starter
 
 
