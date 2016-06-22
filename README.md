@@ -31,7 +31,7 @@ git clone https://github.com/gdangelo/react-starter.git
 # change directory
 cd react-starter
 
-# install the repo with npm and bower
+# install the dependencies with npm and bower
 npm install && bower install
 
 # start the server
